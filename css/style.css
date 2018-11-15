@@ -10,17 +10,14 @@ html, body {
 
 [class*="col-"] {
   float: left;
-  border: 1px solid #ebedee;
   overflow: hidden;
   background-color: #f9f9fa; }
 
 .container-full {
-  max-width: 1600px;
-  border: 1px solid #ebedee; }
+  max-width: 100%; }
 
 .container {
   max-width: 1200px;
-  border: 1px solid #ebedee;
   margin: 0 auto; }
 
 .row::after {
@@ -139,24 +136,39 @@ html, body {
 
   .col-n-12 {
     width: 100%; } }
-.left-menu {
-  background-image: url("../img/bg-menu.jpg");
-  background-position-x: center;
-  background-position-y: -200px; }
-
-.menu-list button {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
+.fill {
   width: 100%;
-  padding: 16px;
-  color: #7d8a90;
-  transition: all ease 0.3s; }
-  .menu-list button:hover {
-    color: #cfd4d7;
-    background-color: #0e506a;
-    transition: all ease 0.3s;
-    border-left: 3px solid #7d8a90;
-    border-right: 3px solid #7d8a90; }
+  height: 100%; }
+
+.header {
+  color: white;
+  background-color: #1784ad;
+  text-align: center;
+  padding: 96px 0px; }
+  .header h1 {
+    font-size: 60px; }
+  .header p {
+    padding: 32px 16px 0px 16px; }
+
+.navbar {
+  background-color: white;
+  display: block;
+  overflow: hidden; }
+  .navbar a {
+    color: #9ea8ac;
+    padding: 16px;
+    float: left;
+    text-decoration: none; }
+    .navbar a:hover {
+      transition: all ease 0.3s;
+      background-color: #f6f7f7; }
+  .navbar .right {
+    float: right; }
+
+.footer {
+  background-color: #ebedee;
+  text-align: center; }
+  .footer p {
+    color: white; }
 
 /*# sourceMappingURL=style.css.map */

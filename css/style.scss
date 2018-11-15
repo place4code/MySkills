@@ -16,3 +16,46 @@ html, body {
 @import "grid";
 
 
+.fill {
+    @include wh100();
+}
+
+.header {
+    color: $font-color-header;
+    background-color: lighten($blue, 18%);
+    text-align: center;
+    padding: 96px 0px;
+    h1 {
+        font-size: 60px;
+    }
+    p {
+        padding: 32px 16px 0px 16px;
+    }
+}
+
+.navbar {
+    background-color: white;
+    display: block;
+    overflow: hidden;
+    a {
+        color: darken($soft-gray, 28%);
+        padding: 16px;
+        float: left; //for padding
+        text-decoration: none;
+        &:hover {
+            @include trans();
+            background-color: lighten($soft-gray, 4%)
+        }
+    }
+    .right {
+            float: right;
+    }
+}
+
+.footer {
+    background-color: $soft-gray;
+    text-align: center;
+    p {
+        color: white;
+    }
+}

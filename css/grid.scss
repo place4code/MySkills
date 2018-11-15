@@ -1,19 +1,16 @@
 
 [class*="col-"] {
     float: left;
-    border: 1px solid $soft-gray;
     overflow: hidden;
     background-color: lighten($soft-gray, 5%);
 }
 
 .container-full {
-    max-width: 1600px;
-    @include border-test();
+    max-width: 100%;
 }
 
 .container {
     max-width: 1200px;
-    @include border-test();
     @include center();
 }
 

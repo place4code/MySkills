@@ -17,3 +17,8 @@
 @mixin trans($par: 0.3s) {
     transition: all ease $par;
 }
+
+@mixin wh100 {
+    width: 100%;
+    height: 100%;
+}
