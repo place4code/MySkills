@@ -18,10 +18,6 @@
     @include clearfix();
 }
 
-$small: 768px;
-$medium: 960px;
-$normal: 1160px;
-
 [class*="col-"] {
     width: 100%;
 }

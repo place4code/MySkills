@@ -44,13 +44,48 @@ html, body {
         text-decoration: none;
         &:hover {
             @include trans();
-            background-color: lighten($soft-gray, 4%)
+            background-color: lighten($soft-gray, 4%);
         }
     }
     .right {
-            float: right;
+        float: right;
     }
+    .active {
+        background-color: lighten($soft-gray, 4%)
+    }
+    .bar-icon {
+        display: none;
+    }
+
+    @media screen and (max-width: $small) {
+        a:not(:first-child) {
+        display: none;
+        }
+        a.bar-icon {
+            display: block;
+        }
+    }   
 }
+
+@media screen and (max-width: $small) {
+    .navbar.responsive-bar {
+        position: relative;
+    }
+    .navbar.responsive-bar a.bar-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive-bar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}   
+
+
+
+
 
 .footer {
     background-color: $soft-gray;

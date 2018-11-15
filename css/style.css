@@ -164,7 +164,29 @@ html, body {
       background-color: #f6f7f7; }
   .navbar .right {
     float: right; }
+  .navbar .active {
+    background-color: #f6f7f7; }
+  .navbar .bar-icon {
+    display: none; }
+  @media screen and (max-width: 768px) {
+    .navbar a:not(:first-child) {
+      display: none; }
+    .navbar a.bar-icon {
+      display: block; } }
 
+@media screen and (max-width: 768px) {
+  .navbar.responsive-bar {
+    position: relative; }
+
+  .navbar.responsive-bar a.bar-icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+  .navbar.responsive-bar a {
+    float: none;
+    display: block;
+    text-align: left; } }
 .footer {
   background-color: #ebedee;
   text-align: center; }
