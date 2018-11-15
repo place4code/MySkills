@@ -1,0 +1,19 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@mixin center {
+    margin: 0 auto;
+}
+
+@mixin border-test {
+    border: 1px solid $soft-gray;
+}
+
+@mixin trans($par: 0.3s) {
+    transition: all ease $par;
+}
