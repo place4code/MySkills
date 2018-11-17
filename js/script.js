@@ -9,5 +9,6 @@ function menuBar() {
         x.className = "navbar";
     }
 
+
     
 }
