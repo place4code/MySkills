@@ -20,9 +20,12 @@ html, body {
     @include wh100();
 }
 
+.intro {
+    background-image: url("../img/bg-img.jpg");
+}
+
 .header {
     color: $font-color-header;
-    background-color: lighten($blue, 18%);
     text-align: center;
     padding: 96px 0px;
     h1 {
@@ -34,17 +37,25 @@ html, body {
 }
 
 .navbar {
-    background-color: white;
     display: block;
     overflow: hidden;
+    font-weight: 500;
+    letter-spacing: 1px;
     a {
-        color: darken($soft-gray, 28%);
-        padding: 16px;
+        opacity: 0.9;
+        color: white;
+        margin: 8px;
+        padding: 8px 16px;
         float: left; //for padding
         text-decoration: none;
+        border-radius: $radius;
+        border: 2px solid rgba(white, 0);
         &:hover {
+            opacity: 1;
             @include trans();
-            background-color: lighten($soft-gray, 4%);
+            border: 2px solid rgba(lighten($soft-gray, 4%), 0.9);
+            background-color: rgba(white, 0.2);
+            box-shadow: 0px 0px 15px 0px rgba(black, 0.5);
         }
     }
     .right {
@@ -83,7 +94,41 @@ html, body {
     }
 }   
 
-
+.dropdown-navbar {
+    overflow: hidden;
+    float: left;
+    
+    button
+         {
+             font-weight: 500;
+    letter-spacing: 1px;
+        opacity: 0.9;
+        color: white;
+        margin: 8px;
+        padding: 8px 16px;
+        float: left; //for padding
+        text-decoration: none;
+        border-radius: $radius;
+        border: 2px solid rgba(white, 0);
+        &:hover {
+            opacity: 1;
+            @include trans();
+            border: 2px solid rgba(lighten($soft-gray, 4%), 0.9);
+            background-color: rgba(white, 0.2);
+            box-shadow: 0px 0px 15px 0px rgba(black, 0.5);
+        }
+    }
+    .right {
+        float: right;
+    }
+    .active {
+        background-color: lighten($soft-gray, 4%)
+    }
+    .bar-icon {
+        display: none;
+    
+    }
+}
 
 
 
